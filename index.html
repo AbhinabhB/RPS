@@ -4,7 +4,24 @@
   <meta charset="UTF-8">
   <title>Page Title</title>
 </head>
-<body>
+<body onload="displayScore()">
   <script src="code.js"></script>
+  <button onclick="getHumanChoiceRock()">Rock</button>
+  <button onclick="getHumanChoicePaper()">Paper</button>
+  <button onclick="getHumanChoiceScissors()">Scissors</button>
+
+  <div id="res"></div>
+
+  <div>
+    <p>
+      Your Score: <span id="score1"></span>
+    </p>
+    <p>
+      Computer Score: <span id="score2"></span>
+    </p>
+  </div>
+
+  <div id="result"></div>
+
 </body>
 </html>
